@@ -1,0 +1,17 @@
+{
+    "author": {
+        "name": "Ahmad Shahzad"
+    },
+    "dependencies": {},
+    "description": "An application to remove HTTP referrer header from URLs.",
+    "devDependencies": {},
+    "homepage": "https://www.blanked.link",
+    "license": "MIT",
+    "main": "index.js",
+    "name": "blanked.link",
+    "private": true,
+    "scripts": {
+        "start": "node ."
+    },
+    "version": "0.0.1"
+}
