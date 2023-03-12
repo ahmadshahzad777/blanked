@@ -13,3 +13,12 @@
     margin: 0 auto;
     padding: 0 25px;
 }
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #ffffff;
+    display: grid;
+    grid-template-rows: 100px auto 50px;
+    grid-gap: 50px;
+}
