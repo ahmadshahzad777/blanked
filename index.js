@@ -24,3 +24,5 @@ app.listen(port, () => {
         `The application is currently listening at: http://localhost:${port}`,
     );
 });
+
+require(path.join(__dirname, 'gencss'));
