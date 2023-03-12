@@ -1,0 +1,10 @@
+#footer {
+    height: 50px;
+
+    .container {
+        height: inherit;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+}
