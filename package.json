@@ -18,7 +18,7 @@
     "private": true,
     "scripts": {
         "dev": "nodemon -e js,html",
-        "scss": "sass --watch scss/style.scss public/css/style.css",
+        "scss": "sass scss/style.scss public/css/style.css",
         "start": "node ."
     },
     "version": "0.0.1"
