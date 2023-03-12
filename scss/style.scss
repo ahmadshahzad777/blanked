@@ -6,3 +6,10 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+
+.container {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
