@@ -21,4 +21,6 @@ body {
     display: grid;
     grid-template-rows: 100px auto 50px;
     grid-gap: 50px;
+
+    @import 'partials/header';
 }
