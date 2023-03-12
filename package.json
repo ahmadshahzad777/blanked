@@ -17,7 +17,7 @@
     "name": "blanked.link",
     "private": true,
     "scripts": {
-        "dev": "nodemon -e js,html",
+        "dev": "nodemon -e js,html,scss",
         "scss": "sass scss/style.scss public/css/style.css",
         "start": "node ."
     },
