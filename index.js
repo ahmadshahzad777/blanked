@@ -11,6 +11,8 @@ nunjucks.configure(path.join(__dirname, 'views'), {
 });
 app.set('view engine', 'html');
 
+app.use(express.static(path.join(__dirname, 'public')));
+
 const router = {
     home: require(path.join(__dirname, 'routes', 'home')),
     error: require(path.join(__dirname, 'routes', '404')),
