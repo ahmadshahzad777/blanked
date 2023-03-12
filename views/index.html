@@ -1,7 +1,72 @@
 {% include './includes/header.html' %}
 
 <!-- THE CONTENT -->
-<main id="content"></main>
+<main id="content">
+    <!-- THE CONTAINER -->
+    <div class="container">
+        <!-- THE HEADING -->
+        <h2 id="heading">Remove HTTP Referrer from URLs</h2>
+        <!-- END HEADING -->
+
+        <!-- THE SLOGAN -->
+        <h3 id="slogan">
+            Remove the HTTP Referrer header source from URLs on redirects. Our
+            simple and free tool allows you to create links that strip the HTTP
+            referrer headers before redirecting to your target site hiding the
+            source of traffic.
+        </h3>
+        <!-- END SLOGAN -->
+
+        <!-- THE INPUT FORM -->
+        <form action="/clean" id="clean">
+            <!-- THE LINK INPUT -->
+            <input
+                type="text"
+                name="link"
+                id="link"
+                placeholder="https://www.example.com"
+                required />
+            <!-- END LINK INPUT -->
+
+            <!-- THE SUBMIT BUTTON -->
+            <button type="submit" id="cleanit">Clean</button>
+            <!-- END SUBMIT BUTTON -->
+        </form>
+        <!-- END INPUT FORM -->
+
+        <!-- THE SOCIAL MENU -->
+        <nav id="social">
+            <!-- THE MENU HEADING -->
+            <p class="menu-heading">
+                Have a question? Reach out to us on our socials.
+            </p>
+            <!-- END MENU HEADING -->
+
+            <!-- THE SOCIAL LINKS -->
+            <a href="#" class="social-item" id="discord">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+            <a href="#" class="social-item" id="twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="social-item" id="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-item" id="reddit">
+                <i class="fa-brands fa-reddit-alien"></i>
+            </a>
+            <a href="#" class="social-item" id="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="social-item" id="tiktok">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <!-- END SOCIAL LINKS -->
+        </nav>
+        <!-- END SOCIAL MENU -->
+    </div>
+    <!-- END CONTAINER -->
+</main>
 <!-- END CONTENT -->
 
 {% include './includes/footer.html' %}
