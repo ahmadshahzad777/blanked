@@ -1,0 +1,24 @@
+#menu {
+    text-align: right;
+
+    #login-button {
+        display: inline-flex;
+        height: 40px;
+        width: 150px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        box-shadow: 0 0 0 3px #ffffff;
+        color: #ffffff;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover {
+            color: #00ffdc;
+            box-shadow: 0 0 0 3px #00ffdc;
+        }
+    }
+}
