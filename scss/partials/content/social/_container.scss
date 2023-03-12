@@ -1,7 +1,78 @@
 #social-container {
+    width: 100%;
+    max-width: 425px;
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 25px;
     justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    .social-item {
+        display: inline-flex;
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 18px;
+
+        &#discord {
+            &:hover {
+                background: #5865f2;
+            }
+        }
+
+        &#twitter {
+            &:hover {
+                background: #1da1f2;
+            }
+        }
+
+        &#facebook {
+            &:hover {
+                background: #4267b2;
+            }
+        }
+
+        &#reddit {
+            font-size: 20px;
+
+            &:hover {
+                background: #ff4500;
+            }
+        }
+
+        &#instagram {
+            font-size: 20px;
+
+            &:hover {
+                background: radial-gradient(
+                        51.8% 49.8% at 36.25% 96.55%,
+                        #ffd600 0%,
+                        #ff6930 48.44%,
+                        #fe3b36 73.44%,
+                        rgba(254, 59, 54, 0) 100%
+                    ),
+                    radial-gradient(
+                        182.65% 122.8% at 84.5% 113.5%,
+                        #ff1b90 24.39%,
+                        #f80261 43.67%,
+                        #ed00c0 68.85%,
+                        #c500e9 77.68%,
+                        #7017ff 89.32%
+                    );
+            }
+        }
+
+        &#tiktok {
+            &:hover {
+                filter: drop-shadow(2px 0px 0px #fd3e3e)
+                    drop-shadow(-2px -2px 0px #4de8f4);
+            }
+        }
+    }
 }
