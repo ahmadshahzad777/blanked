@@ -1,0 +1,9 @@
+#content {
+    text-align: center;
+
+    .container {
+        display: grid;
+        grid-template-rows: auto;
+        grid-gap: 50px;
+    }
+}
