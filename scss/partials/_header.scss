@@ -6,4 +6,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    .container {
+        height: inherit;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
 }
