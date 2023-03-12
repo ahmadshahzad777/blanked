@@ -1,51 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>BLANKED.LINK</title>
-        <link rel="stylesheet" href="/css/style.css" />
-    </head>
-    <body>
-        <!-- THE HEADER -->
-        <header id="header">
-            <!-- THE CONTAINER -->
-            <div class="container">
-                <!-- THE LOGO -->
-                <section id="logo">
-                    <h1>
-                        <a href="/">BLANKED</a>
-                    </h1>
-                </section>
-                <!-- END LOGO -->
+{% include './includes/header.html' %}
 
-                <!-- THE MENU -->
-                <nav id="menu">
-                    <a href="/auth/login" id="login-button" class="menu-item">
-                        Login
-                    </a>
-                </nav>
-                <!-- END MENU -->
-            </div>
-            <!-- END CONTAINER -->
-        </header>
-        <!-- END HEADER -->
+<!-- THE CONTENT -->
+<main id="content"></main>
+<!-- END CONTENT -->
 
-        <!-- THE CONTENT -->
-        <main id="content"></main>
-        <!-- END CONTENT -->
-
-        <!-- THE FOOTER -->
-        <footer id="footer">
-            <!-- THE CONTAINER -->
-            <div class="container">
-                <!-- THE COPYRIGHT -->
-                <p id="copyright">Copyright (c) 2023 — BLANKED.LINK</p>
-                <!-- END COPYRIGHT -->
-            </div>
-            <!-- END CONTAINER -->
-        </footer>
-        <!-- END FOOTER -->
-    </body>
-</html>
+{% include './includes/footer.html' %}
