@@ -5,5 +5,7 @@
         display: grid;
         grid-template-rows: auto;
         grid-gap: 50px;
+
+        @import 'content/headings';
     }
 }
