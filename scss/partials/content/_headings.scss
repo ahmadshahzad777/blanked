@@ -2,4 +2,6 @@
     display: grid;
     grid-template-rows: auto;
     grid-gap: 25px;
+
+    @import 'headings/heading';
 }
