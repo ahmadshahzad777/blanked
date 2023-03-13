@@ -69,14 +69,30 @@ connection.query(CREATE_TABLE_USERS, (err) => {
                     err,
                 );
             } else {
-                connection.query(CREATE_DEFAULT_USER, (err) => {
-                    if (err) {
-                        return console.error(
-                            'There was an error creating the default user.',
-                            err,
-                        );
-                    }
-                });
+                connection.query(
+                    'SELECT COUNT (id) AS user_count FROM users',
+                    (err, rows, fields) => {
+                        if (err) {
+                            return console.error(
+                                'There was an error getting the user count.',
+                                err,
+                            );
+                        } else {
+                            const count = rows[0].user_count;
+
+                            if (count < 1) {
+                                connection.query(CREATE_DEFAULT_USER, (err) => {
+                                    if (err) {
+                                        return console.error(
+                                            'There was an error creating the default user.',
+                                            err,
+                                        );
+                                    }
+                                });
+                            }
+                        }
+                    },
+                );
             }
         });
     }
