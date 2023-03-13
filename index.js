@@ -15,10 +15,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const router = {
     home: require(path.join(__dirname, 'routes', 'home')),
+    clean: require(path.join(__dirname, 'routes', 'clean')),
     error: require(path.join(__dirname, 'routes', '404')),
 };
 
 app.use('/', router.home);
+app.use('/clean', router.clean);
 app.use('*', router.error);
 
 app.listen(port, () => {
