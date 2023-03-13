@@ -6,10 +6,20 @@ clean.addEventListener('submit', (e) => {
     e.preventDefault();
 });
 
-cleanit.addEventListener('click', (e) => {
+cleanit.addEventListener('click', async (e) => {
     e.preventDefault();
     if (isValidUrl(link.value)) {
-        alert('GG');
+        const response = await fetch('/clean', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ link }),
+        });
+
+        const data = await response.json();
+
+        console.log(data);
     } else {
         alert(
             'Please enter a valid URL of the format: http(s)://(www.)example.com',
