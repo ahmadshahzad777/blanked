@@ -20,12 +20,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 const router = {
     go: require(path.join(__dirname, 'routes', 'go')),
     home: require(path.join(__dirname, 'routes', 'home')),
+    auth: require(path.join(__dirname, 'routes', 'auth')),
     clean: require(path.join(__dirname, 'routes', 'clean')),
     error: require(path.join(__dirname, 'routes', '404')),
 };
 
 app.use('/', router.home);
 app.use('/go', router.go);
+app.use('/auth', router.auth);
 app.use('/clean', router.clean);
 app.use('*', router.error);
 
