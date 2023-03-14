@@ -20,8 +20,29 @@ router.get('/:alias', (req, res) => {
             });
         } else {
             if (rows.length > 0) {
-                const link = rows[0].link;
-                return res.redirect(link);
+                const row = rows[0];
+                const id = row.id;
+                const link = row.link;
+                const views = row.views + 1;
+                const enabled = row.enabled;
+
+                if (enabled) {
+                    db.query(
+                        `UPDATE links SET views = ${views} WHERE id = ${id}`,
+                        (err) => {
+                            if (err) {
+                                const message =
+                                    "There was an error updating the link's view count.";
+                                console.error(`${message}`, err);
+                                return res.render('error', { message, err });
+                            } else {
+                                return res.redirect(link);
+                            }
+                        },
+                    );
+                } else {
+                    return res.redirect('/');
+                }
             } else {
                 return res.redirect('/');
             }
