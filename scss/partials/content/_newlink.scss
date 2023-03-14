@@ -1,7 +1,7 @@
 #newlink {
     background: #000000;
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
     padding: 25px;
     border-radius: 25px;
     margin: 0 auto;
@@ -9,4 +9,32 @@
     grid-template-rows: auto;
     grid-gap: 25px;
     color: #ffffff;
+    position: relative;
+
+    #newlink-heading {
+        font-size: 16px;
+        font-weight: 700;
+        color: #cccccc;
+    }
+
+    #thelink {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    #copy {
+        width: 175px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: #00ffdc;
+        margin: 0 auto;
+        text-transform: uppercase;
+        font-weight: 700;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #ffffff;
+            box-shadow: 0 0 25px #aaa;
+        }
+    }
 }
