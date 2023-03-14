@@ -14,7 +14,7 @@ cleanit.addEventListener('click', async (e) => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ link }),
+            body: JSON.stringify({ link: link.value }),
         });
 
         const data = await response.json();
