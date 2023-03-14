@@ -12,6 +12,10 @@
     position: relative;
     box-shadow: 0 0 50px #999;
 
+    &.hidden {
+        display: none;
+    }
+
     #newlink-heading {
         font-size: 16px;
         font-weight: 700;
