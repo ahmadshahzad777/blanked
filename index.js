@@ -18,12 +18,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 const router = {
+    go: require(path.join(__dirname, 'routes', 'go')),
     home: require(path.join(__dirname, 'routes', 'home')),
     clean: require(path.join(__dirname, 'routes', 'clean')),
     error: require(path.join(__dirname, 'routes', '404')),
 };
 
 app.use('/', router.home);
+app.use('/go', router.go);
 app.use('/clean', router.clean);
 app.use('*', router.error);
 
