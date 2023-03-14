@@ -24,7 +24,7 @@ cleanit.addEventListener('click', async (e) => {
         const data = await response.json();
 
         if (data.status === true) {
-            thelink.innerText = `https://blanked.link/${data.alias}`;
+            thelink.innerText = `https://blanked.link/go/${data.alias}`;
             newlink.classList.remove('hidden');
         }
     } else {
