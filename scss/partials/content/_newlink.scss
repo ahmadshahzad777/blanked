@@ -10,6 +10,7 @@
     grid-gap: 25px;
     color: #ffffff;
     position: relative;
+    box-shadow: 0 0 50px #999;
 
     #newlink-heading {
         font-size: 16px;
@@ -24,17 +25,84 @@
 
     #copy {
         width: 175px;
-        height: 50px;
+        height: 40px;
         border-radius: 10px;
         background-color: #00ffdc;
         margin: 0 auto;
         text-transform: uppercase;
         font-weight: 700;
         cursor: pointer;
+        border: 0;
 
         &:hover {
             background-color: #ffffff;
             box-shadow: 0 0 25px #aaa;
+        }
+    }
+
+    .flare.fa-solid {
+        text-shadow: 0 0 5px #444444;
+    }
+
+    .flare {
+        color: yellow;
+    }
+
+    .big-flare {
+        position: absolute;
+        border-color: black;
+        top: -12px;
+        right: -12px;
+        transform: rotate(45deg);
+        z-index: 999;
+    }
+
+    .small-flare-1 {
+        position: absolute;
+        border-color: black;
+        top: -18px;
+        right: -3px;
+        transform: rotate(-90deg);
+        z-index: 999;
+    }
+
+    .small-flare-2 {
+        position: absolute;
+        border-color: black;
+        top: -12px;
+        right: -18px;
+        transform: rotate(-90deg);
+        z-index: 999;
+    }
+
+    .small-flare-3 {
+        position: absolute;
+        border-color: black;
+        top: 0px;
+        right: -18px;
+        transform: rotate(-90deg);
+        z-index: 999;
+    }
+
+    #closelink {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        border: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 60, 60);
+        color: #ffffff;
+        position: absolute;
+        bottom: -10px;
+        left: -10px;
+        box-shadow: 0 0 10px #444444;
+        cursor: pointer;
+
+        i {
+            font-size: 18px;
+            margin-top: 2px;
         }
     }
 }
